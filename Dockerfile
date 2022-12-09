@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM maven:3.3-jdk-8-onbuild 
 
 COPY ./target/springboot-app-0.0.1-SNAPSHOT.jar /usr/app/
 
