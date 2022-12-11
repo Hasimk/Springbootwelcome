@@ -1,4 +1,4 @@
-ROM maven:3.8.2-jdk-11
+FROM maven:3.8.2-jdk-11
 WORKDIR /usr/app
 COPY . /usr/app
 RUN mvn clean package
