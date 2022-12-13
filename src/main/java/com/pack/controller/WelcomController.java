@@ -12,7 +12,7 @@ public class WelcomController {
 	@GetMapping("/welcome")
 	public String getAll() {
 		
-		return "!!!!!!!!!!!!!!!!!!!!!!!!Hello From Springboot!!!!!!!!!!!!!!!!!!!!!!";
+		return "!!!!!!!!!!!!!!!!!!!!!!!!Hello From Springboot CICD!!!!!!!!!!!!!!!!!!!!!!";
 		
 		
 	}
