@@ -1,5 +1,10 @@
-FROM maven:3.8.2-jdk-11
+FROM openjdk:8
+
+COPY ./target/springboot-app-0.0.1-SNAPSHOT.jar /usr/app/
+
 WORKDIR /usr/app
-COPY . /usr/app
-RUN mvn clean package
+
+RUN sh -c 'touch springboot-app-0.0.1-SNAPSHOT.jar'
+
+
 ENTRYPOINT ["java","-jar","springboot-app-0.0.1-SNAPSHOT.jar"]
